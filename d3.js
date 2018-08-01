@@ -2,10 +2,11 @@ import { line } from "d3-shape";
 import { scaleTime, scaleLinear } from "d3-scale";
 import { axisBottom, axisLeft } from 'd3-axis';
 import { timeParse } from "d3-time-format";
-import { select, Selection } from "d3-selection";
+import { select } from "d3-selection";
 import { csv } from "d3-request";
 import { extent } from "d3-array";
-import { transition, Transition } from "d3-transition";
+import { transition } from "d3-transition";
+import { easeLinear } from "d3-ease";
 
 export default {
   line: line,
@@ -17,5 +18,6 @@ export default {
   select: select,
   csv: csv,
   extent: extent,
-  transition: transition
+  transition: transition,
+  easeLinear: easeLinear
 }
