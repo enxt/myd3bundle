@@ -5,6 +5,7 @@ import { timeParse } from "d3-time-format";
 import { select } from "d3-selection";
 import { csv } from "d3-request";
 import { extent } from "d3-array";
+import { transition } from "d3-transition";
 
 export default {
   line: line,
@@ -15,5 +16,6 @@ export default {
   timeParse: timeParse,
   select: select,
   csv: csv,
-  extent: extent
+  extent: extent,
+  transition: transition
 }
